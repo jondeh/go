@@ -1,0 +1,56 @@
+.grid-container {
+    position: absolute;
+    display: grid;
+    z-index: 1;
+    .grid-square-container {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+        &:hover {
+            background: rgba(0, 0, 0, 0.75);
+            border-radius: 50%;
+            transform: scale(.9);
+        }
+        
+        .stone {
+            height: 90%;
+            width: 90%;
+            border-radius: 50%;
+            z-index: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .previous-stone {
+            height: 30%;
+            width: 30%;
+        }
+
+        .star {
+            position: absolute;
+            height: 25%;
+            width: 25%;
+            background: black;
+        }
+
+        .red-liberty {
+            height: 25%;
+            width: 25%;
+            background: rgba(255, 0, 0, 0.75);
+            position: absolute;
+            z-index: 9;
+        }
+
+        .blue-liberty {
+            height: 25%;
+            width: 25%;
+            background: rgba(0, 0, 255, 0.75);
+            position: absolute;
+            z-index: 9;
+        }
+    }
+
+}
